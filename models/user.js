@@ -10,7 +10,9 @@ const userSchema = new Schema({
   },
   about: {
     type: String,
-    required: true
+    required: true,
+    minlength: 2,
+    maxlength: 30
   },
   avatar: {
     type: String,
